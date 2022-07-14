@@ -219,6 +219,156 @@
             left: 837.64px;
             top: 590.66px;
         }
+        #obsPoints{
+            position: absolute;
+            width: 426.95px;
+            height: 391.1px;
+            left: 885.68px;
+            top: 690.44px;
+            z-index: 10;
+        }
+        #stainPresenceIcon{
+            position: absolute;
+            width: 88.08px;
+            height: 88.08px;
+            left: 885.68px;
+            top: 690.44px;
+        }
+        #calculusPresenceIcon{
+            position: absolute;
+            width: 88.08px;
+            height: 88.08px;
+            left: 885.68px;
+            top: 841.95px;
+        }
+        #decaySignIcon{
+            position: absolute;
+            width: 88.08px;
+            height: 88.08px;
+            left: 885.68px;
+            top: 993.46px;
+        }
+        #stainPresence{
+            position: absolute;
+            color: #FF3482;
+            width: 87.03px;
+            height: 24.83px;
+            left: 1000px;
+            top: 705px;
+            font-size: 33px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        #calculusPresence{
+            position: absolute;
+            color: #FF3482;
+            width: 87.03px;
+            height: 24.83px;
+            left: 1000px;
+            top: 856px;
+            font-size: 33px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        #decaySign{
+            position: absolute;
+            color: #FF3482;
+            width: 87.03px;
+            height: 24.83px;
+            left: 1000px;
+            top: 1008px;
+            font-size: 33px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        #toothSensitivity{
+            position: absolute;
+            width: 84.79px;
+            height: 24.08px;
+            left: 228px;
+            top: 1304px;
+            font-size: 33px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            z-index: 10;
+        }
+        #gumBleeding{
+            position: absolute;
+            width: 84.79px;
+            height: 24.08px;
+            left: 658px;
+            top: 1304px;
+            font-size: 33px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            z-index: 10;
+        }
+        #badBreathe{
+            position: absolute;
+            width: 84.79px;
+            height: 24.08px;
+            left: 1088px;
+            top: 1304px;
+            font-size: 33px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            z-index: 10;
+        }
+        #name{
+            position: absolute;
+            font-weight: 100px;
+            width: 292px;
+            height: 19.79px;
+            left: 100px;
+            top: 189px;
+            font-size: 26px;
+            letter-spacing: 0.1px;
+            font-weight: 600;
+        }
+        #gender{
+            position: absolute;
+            font-weight: 100px;
+            width: 292px;
+            height: 19.79px;
+            left: 483px;
+            top: 189px;
+            font-size: 26px;
+            letter-spacing: 0.1px;
+            font-weight: 600;
+        }
+        #age{
+            position: absolute;
+            font-weight: 100px;
+            width: 292px;
+            height: 19.79px;
+            left: 100px;
+            top: 291px;
+            font-size: 26px;
+            letter-spacing: 0.1px;
+            font-weight: 600;
+        }
+        #habit{
+            position: absolute;
+            font-weight: 100px;
+            width: 292px;
+            height: 19.79px;
+            left: 237px;
+            top: 291px;
+            font-size: 26px;
+            letter-spacing: 0.1px;
+            font-weight: 600;
+        }
+        #visit{
+            position: absolute;
+            font-weight: 100px;
+            width: 292px;
+            height: 19.79px;
+            left: 485px;
+            top: 291px;
+            font-size: 26px;
+            letter-spacing: 0.1px;
+            font-weight: 600;
+        }
   </style>
   <body>
         <div id="gradHeader"></div>
@@ -236,6 +386,7 @@
         <img id="scanCam" src="scanCam.svg" alt="">
         <img id="nameFields" src="nameFields.svg" alt="">
         <img id="obs" src="obs.svg" alt="">
+        <img id="obsPoints" src="obsPoints.svg" alt="">
         <!-- <img style="position:absolute;top:0;z-index: -10;" src="/bg.svg" alt=""> -->
         <div id="lightGradient"></div>
         <div id="toplightGradient"></div>
@@ -254,15 +405,30 @@
             <span class="fa fa-circle"></span>
             <span class="fa fa-circle"></span>
         </div>
+
         <div id="img1" style="background: url(https://logy.ai/ColgateNigeria/images/basic/teeth1.webp);background-size: cover;background-position: center;"></div>
         <div id="img2" style="background: url(https://logy.ai/ColgateNigeria/images/basic/teeth2.webp);background-size: cover;background-position: center;"></div>
         <div id="img3" style="background: url(https://logy.ai/ColgateNigeria/images/basic/teeth3.webp);background-size: cover;background-position: center;"></div>
         
+        <img id="stainPresenceIcon" src="danger.svg" alt="">
+        <p id="stainPresence">HIGH</p>
+        <img id="calculusPresenceIcon" src="medium.svg" alt="">
+        <p id="calculusPresence">MEDIUM</p>
+        <img id="decaySignIcon" src="okay.svg" alt="">
+        <p id="decaySign">PRESENT</p>
+        
+        <p style="color: #FF0000;" id="toothSensitivity">HIGH</p>
+        <p style="color: #04EA14;" id="gumBleeding">MEDIUM</p>
+        <p style="color: #FFC83C;" id="badBreathe">LOW</p>
+
+        <p id="name">Firstname Surname</p>
+        <p id="gender">Prefer Not to Say</p>
+        <p id="age">30</p>
+        <p id="habit">Twice Daily</p>
+        <p id="visit">As Per Need</p>
         
         
         
-        
-        
-        <img id="graph" src="graph.svg" alt="">
+        <img id="graph" src="graphGood.svg" alt="">
     </body>
 </html>
